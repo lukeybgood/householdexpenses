@@ -73,6 +73,10 @@
         margin-top: 0.4rem;
       }
 
+      #supplementalIncome {
+        accent-color: #16a34a;
+      }
+
       .result {
         font-size: clamp(1.2rem, 2.4vw, 1.8rem);
         font-weight: 800;
@@ -89,6 +93,28 @@
       <section class="box" aria-label="Income range">
         <h2>Income Range</h2>
         <div class="result" id="incomeRangeLabel">$10,440 = $11,904</div>
+      </section>
+
+      <section class="box" aria-label="Supplemental income">
+        <h2>Supplemental Income</h2>
+      <section class="box" aria-label="Supplemental income and income range">
+        <h2>Supplemental income / month</h2>
+        <div class="slider-row">
+          <label for="supplementalIncome">
+            Supplemental Income / month
+            <span id="supplementalIncomeValue">$0</span>
+          </label>
+          <input
+            id="supplementalIncome"
+            type="range"
+            min="0"
+            max="5000"
+            step="1"
+            value="0"
+          />
+          <div class="hints"><span>$0</span><span>$5,000</span></div>
+        </div>
+        <div class="result" id="incomeRangeLabel">$10,440 - $11,904</div>
       </section>
 
       <section class="box" aria-label="Supplemental income">
